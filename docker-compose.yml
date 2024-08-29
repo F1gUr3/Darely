@@ -1,0 +1,69 @@
+services:
+    db:
+      image: mysql:8.0
+      restart: always
+      container_name: darely_db
+      environment: 
+        MYSQL_ROOT_PASSWORD: my-development-pw
+        MYSQL_DATABASE: darely_db
+        MYSQL_USER: darely_admin
+        MYSQL_PASSWORD: my-user-password
+      healthcheck:
+            test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+            timeout: 10s
+            retries: 10
+      ports:
+        - "3306:3306"
+      volumes:
+        - mysql-data:/var/lib/mysql
+      networks:
+        - darely-network
+
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: phpmyadmin
+      environment:
+        PMA_HOST: db
+        PMA_PORT: 3306
+        PMA_USER: darely_admin
+        PMA_PASSWORD: my-user-password
+      ports:
+        - "8080:80"
+      networks:
+        - darely-network
+    backend:
+      build: ./backend
+      restart: always
+      container_name: darely_backend
+      ports:
+        - "3000:3000"
+      networks:
+        - darely-network
+      depends_on:
+        db:
+          condition: service_healthy
+      env_file:
+      - backend/.env
+    frontend:
+      build: ./frontend
+      container_name: darely_frontend
+      ports:
+        - "5173:5173"
+      networks:
+        - darely-network
+
+
+    
+
+          
+
+        
+  
+
+volumes:
+  mysql-data:
+
+networks: 
+  darely-network:
+    driver: bridge
+    external: true

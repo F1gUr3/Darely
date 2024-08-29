@@ -4,7 +4,7 @@ CREATE TABLE questions (
     category VARCHAR(150) NOT NULL,
     content TEXT NOT NULL,
 );
--- Temporary questions for development
+-- Temporary questions for development, switch up for your questions
 INSERT INTO questions (id, type, category, content) VALUES
 (1, 'T', 'friends', 'What is the most embarrassing thing you have ever done?'),
 (2, 'D', 'friends', 'Dance with no music for 1 minute.'),

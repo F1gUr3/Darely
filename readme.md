@@ -25,3 +25,6 @@
   2. Add Gamification if the player did or did not do the task.
   3. bug fix disguisting ui
   4. Fix responsibility issues.
+ ## Stack
+  - Frontend: Vite, Vue, Tailwind
+  - Backend: Express MySql, Sequelize, Docker

@@ -14,7 +14,7 @@ let {name} = defineProps({
 
 <style scoped>
 .NextButton{
-    @apply bg-white rounded-xl  my-16  duration-300 cursor-pointer;
+    @apply bg-white rounded-xl   duration-300 cursor-pointer;
     p{
         color: black !important ;
         @apply text-3xl py-4 w-full px-16 select-none;

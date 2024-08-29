@@ -15,10 +15,10 @@ let { QuestText } = defineProps({
 
 <style scoped>
 .QuestText{
-    @apply text-5xl flex justify-center items-center w-4/6 
+    @apply text-5xl flex justify-center items-center w-4/6 text-center
 }
 .QuestTextContainer{
-    @apply flex flex-row justify-center mt-24
+    @apply flex flex-row justify-center 
 }
 
 

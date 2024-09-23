@@ -5,7 +5,7 @@ import CategorySelectorButton from "./subComponents/CategorySelectorButton.vue";
 
 
 const categories = ["family", "friends", "couple"];
-const buttonCategory = ref("👨‍👩‍👦‍👦Family");
+const buttonCategory = ref("Family");
 function handleCategorySelection(category){
     buttonCategory.value = category;
 }

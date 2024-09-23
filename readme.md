@@ -19,6 +19,7 @@
  1. Select Category From above
  2. Ask for Truth or Dare question
  3. Enjoy.
+
 ![An Image of Darely](https://i.imgur.com/NlQw3uQ.png)
 
  ## Future plans

@@ -19,6 +19,7 @@
  1. Select Category From above
  2. Ask for Truth or Dare question
  3. Enjoy.
+![An Image of darely](https://imgur.com/a/2ZtvrwI)
 
  ## Future plans
   1. Develop option to add new questions from web. 

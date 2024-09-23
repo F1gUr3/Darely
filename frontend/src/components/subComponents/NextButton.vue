@@ -17,7 +17,7 @@ let {name} = defineProps({
     @apply bg-white rounded-xl   duration-300 cursor-pointer;
     p{
         color: black !important ;
-        @apply text-3xl py-4 w-full px-16 select-none;
+        @apply text-2xl md:text-3xl py-4 w-full px-4 md:px-16 select-none;
     }
     transition: box-shadow 300ms ease-in-out;
 }

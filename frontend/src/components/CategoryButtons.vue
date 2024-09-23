@@ -33,6 +33,7 @@ function emitCategory(){
 
 <style scoped>
 .CategoryButtons {
-  @apply flex flex-row justify-center gap-16 mt-8 cursor-pointer;
+  @apply flex flex-row justify-center text-center gap-4 md:gap-16 mt-8 cursor-pointer ;
 }
+
 </style>

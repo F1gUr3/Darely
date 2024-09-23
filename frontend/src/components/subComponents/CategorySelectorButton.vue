@@ -25,7 +25,7 @@ let ClickCategory = function(){
 <style scoped>
 
 .CategoryButton{
-    @apply bg-[#ff98e99b] p-4 rounded-xl text-2xl backdrop-blur-md select-none;
+    @apply bg-[#ff98e99b] px-2 py-4  md:p-4 rounded-xl text-xl md:text-2xl backdrop-blur-md select-none ;
 }
 .selected{
     @apply bg-white;
